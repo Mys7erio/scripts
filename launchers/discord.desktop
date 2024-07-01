@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Discord
+Exec=/opt/Discord/Discord
+Icon=/usr/share/icons/discord.png
+Comment=Discord Client for Linux
+Type=Application
+Terminal=false
+Encoding=UTF-8
+Categories=Utility;

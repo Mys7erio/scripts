@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Firefox
+Exec=/opt/Firefox/firefox
+Icon=/usr/share/icons/firefox.png
+Comment=Firefox Web Browser for Linux
+Type=Application
+Terminal=false
+Encoding=UTF-8
+Categories=Utility;

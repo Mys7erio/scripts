@@ -1,0 +1,2 @@
+#!/bin/bash
+ip -o -4 addr show tun0 | awk '{print $4}' | cut -d/ -f1
