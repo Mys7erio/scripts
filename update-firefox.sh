@@ -1,4 +1,4 @@
-
+\
 #!/bin/bash
 
 # Cache sudo credentials
@@ -24,6 +24,13 @@ fi
 if [ ! -f /usr/share/icons/firefox.png ]; then
     echo "[i] Firefox icon not found. Adding..."
     sudo cp icons/firefox.png /usr/share/icons
+fi
+
+# Execute `which` and check if the return code is 0 (successful)
+firefox_binary=$(which firefox 2>/dev/null)
+if [ $? -ne 0 ]; then
+	echo "[i] Firefox binary not found in PATH. Adding..."
+	sudo ln -s /opt/Firefox/firefox /usr/local/bin/firefox
 fi
 
 echo "[+] Successfully updated to latest version"
