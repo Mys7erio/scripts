@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=VS Code
+Exec=/opt/VSCode-linux-x64/code
+Icon=/usr/share/icons/vscode.png
+Comment=VS Code for Arch
+Type=Application
+Terminal=false
+Encoding=UTF-8
+Categories=Utility;

@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# TODO: Bugfix - script prints error before printing ip address
-# Reproduce: disconnect tun0 and run ./getip
-
 interface=$1
 
 if [ ! -z $interface ]; then
