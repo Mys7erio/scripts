@@ -9,7 +9,7 @@ if [ ! -z $interface ]; then
 	ip -o -4 addr show $interface | awk '{print $4}' | cut -d/ -f1
 else
 	# Print tun0 address if not interface specified
-	addr=$(ip -o -4 addr show tun0 | awk '{print $4}' | cut -d/ -f1)
+	addr=$(ip -o -4 addr show tun0 2>/dev/null| awk '{print $4}' | cut -d/ -f1)
 
 	# If tun0 is not available, print wifi address
 	# Check if $addr is empty. $addr will be empty if the previous command errored out
